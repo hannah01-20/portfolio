@@ -1,1 +1,15 @@
 @import "tailwindcss";
+
+@theme {
+    --color-main: rgb(255,255,100)
+}
+
+*{
+    scroll-behavior: smooth;
+}
+
+.cardScroll{
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: pink rgba(0,0,0,0);
+}
