@@ -1,12 +1,17 @@
-function Card(){
+interface CardProps {
+    projectTitle: string;
+    about: string;
+    features: string[];
+    stack: string;
+}
+
+function Card({projectTitle, about, features, stack}: CardProps){
     return(
-        <div className="p-8 rounded-lg bg-[rgba(11,10,20,0.3)]  text-white  backdrop-blur-lg min-w-1/5 border border-black grid gap-4">
-            <h1 className="font-bold text-center">PROJECT TITLE</h1>
-            <li>ABOUT SYSTEM</li>
-            <li>FEATURE</li>
-            <li>FEATURE</li>
-            <li>FEATURE</li>
-            <li>STACKS</li>
+        <div className="p-8 rounded-lg bg-blue-200/15  text-white  backdrop-blur-lg max-w-1/5 max-h-3/5 border border-blue-200 grid gap-4 hover:bg-pink-200/15 hover:border-pink-200 transition ease-in duration-300 hover:shadow-2xl shadow-pink-200 hover:-translate-y-2 overflow-scroll">
+            <h1 className="font-bold text-center">{projectTitle}</h1>
+            <li>{about}</li>
+            {features.map((feature, i)=>(<li key={i}>{feature}</li>))}
+            <li>{stack}</li>
         </div>
     )
 }
