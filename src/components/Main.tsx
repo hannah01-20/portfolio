@@ -1,6 +1,6 @@
-import Contact from "./Contact";
-import Projects from "./Projects";
-import Skills from "./Skills";
+import Contact from "./sections/Contact";
+import Projects from "./sections/Projects";
+import Skills from "./sections/Skills";
 
 function Main(){
     return(
