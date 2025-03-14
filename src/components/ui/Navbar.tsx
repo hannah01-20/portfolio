@@ -1,5 +1,5 @@
 import { CgGirl } from "react-icons/cg";
-import { FaProjectDiagram, FaUser } from "react-icons/fa";
+import { FaProjectDiagram } from "react-icons/fa";
 import { FaUserGear } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
 import NavItem from "./NavItem";
@@ -12,7 +12,7 @@ function Navbar(){
             <div className="w-full flex items-center justify-evenly">
                 <NavItem link="#home" Logo={CgGirl} text="Hannah"/>
                 <NavItem link="#projects" Logo={FaProjectDiagram} text="Projects"/>
-                <NavItem link="#skills" Logo={FaUser} text="Skills"/>
+                <NavItem link="#skills" Logo={FaUserGear} text="Skills"/>
                 <NavItem link="#contact" Logo={IoIosMail} text="Contact"/>
             </div>
         </nav>
