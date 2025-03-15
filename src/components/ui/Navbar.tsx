@@ -15,7 +15,7 @@ function Navbar(){
         setOpen(e=>!e);
     }
     return(
-        <nav className={`fixed top-0 z-[999] w-full backdrop-blur-lg shadow-sm overflow-hidden transition ease-in duration-300 ${isOpen && "h-full" }`} >
+        <nav className={`fixed top-0 z-[999] w-full backdrop-blur-lg shadow-sm transition ease-in duration-300 ${isOpen && "h-full" }`} >
             {isMobile() ? (
                 <>
                     <div className="w-full flex items-center justify-between px-5">
@@ -26,7 +26,7 @@ function Navbar(){
                     </div>
                     
                     {isOpen &&
-                        <div className="w-full h-full p-36 grid" onClick={handleDropDown}>
+                        <div className="w-full h-full p-36 grid items-center" onClick={handleDropDown}>
                             <NavItem link="#projects" Logo={FaProjectDiagram} text="Projects"/>
                             <NavItem link="#skills" Logo={FaUserGear} text="Skills"/>
                             <NavItem link="#contact" Logo={IoIosMail} text="Contact"/>
