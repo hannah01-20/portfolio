@@ -1,7 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-    --color-main: rgb(255,255,100)
+    --color-main: rgb(255,255,100);
+    --spacing-card: 30rem;
 }
 
 *{

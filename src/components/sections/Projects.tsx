@@ -1,10 +1,10 @@
 import Card from "../ui/Card";
 function Projects(){
     return (
-        <section className="h-dvh text-white" id="projects">
-            <div className="w-full h-full bg-gradient-to-b from-black/80 via-white/0 to-black/80 p-20">
-                <h1 className="text-3xl font-bold">Projects</h1>
-                <div className="w-full h-full flex justify-evenly items-center">
+        <section className="md:h-dvh text-white" id="projects">
+            <div className="w-full h-full bg-gradient-to-b from-black/80 via-white/0 to-black/80 p-8 md:p-20">
+                <h1 className="text-3xl font-bold mt-8">Projects</h1>
+                <div className="w-full h-full flex flex-col md:flex-row justify-evenly items-center gap-8 mt-8">
                     <Card 
                         projectTitle="Monitoring Expenses web-based"
                         about="Monitoring and tracking user's expenses, accurately presenting user's transaction for him/her to analyzed it."
