@@ -5,7 +5,7 @@ import { IoIosMail } from "react-icons/io";
 import { MdMenu } from "react-icons/md";
 import { IoIosClose } from "react-icons/io";
 import NavItem from "./NavItem";
-import { isMobile } from "../../utils/userScreen";
+import { useIsMobile } from "../../utils/userScreen";
 import { useState } from "react";
 
 
@@ -16,7 +16,7 @@ function Navbar(){
     }
     return(
         <nav className={`fixed top-0 z-[999] w-full backdrop-blur-lg shadow-sm transition ease-in duration-300 ${isOpen && "h-full" }`} >
-            {isMobile() ? (
+            {useIsMobile() ? (
                 <>
                     <div className="w-full flex items-center justify-between px-5">
                     <NavItem link="#home" Logo={CgGirl} text="Hannah" />
