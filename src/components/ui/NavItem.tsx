@@ -8,10 +8,10 @@ interface Props {
 
 function NavItem({link, Logo, text}: Props){
     return(
-        <a href={link} className="py-4 px-8 hover:bg-pink-200/15 hover:shadow-2xl shadow-pink-200 transition ease-in-out duration-300">
-            <div className="text-white flex justify-center items-center gap-2">
+        <a href={link} className="py-2 md:py-4 md:px-8 hover:bg-pink-200/15 hover:shadow-2xl shadow-pink-200 transition ease-in-out duration-300">
+            <div className="text-xl text-white flex justify-center items-center gap-2">
                 <Logo color="white" size={30} />
-                <p className="text-xl font-bold">{text}</p>
+                <p className="font-bold">{text}</p>
             </div>
         </a>
     )
