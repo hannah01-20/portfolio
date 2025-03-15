@@ -1,5 +1,5 @@
 import hannah from "../assets/hannah1x1.jpg"
-import resume from "../pdfs/Hannah_Florano-CV.pdf"
+import resume from "../pdfs/hannah_florano_CV.pdf"
 function Header(){
 
     return (
