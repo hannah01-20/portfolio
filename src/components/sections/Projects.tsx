@@ -9,7 +9,7 @@ function Projects(){
                         projectTitle="Monitoring Expenses web-based"
                         about="Monitoring and tracking user's expenses, accurately presenting user's transaction for him/her to analyzed it."
                         features={[
-                            "User Athentication",
+                            "User Authentication",
                             "Transaction logs",
                             "Graphical representation of expenses",
                             "Allocate budgets",

@@ -4,11 +4,7 @@
 @theme {
     --color-main: rgb(255,255,100);
     --spacing-card: 30rem;
-    --font-sans: "Poppins", sans-serif;
-}
-
-*{
-    scroll-behavior: smooth;
+    --font-Poppins: "Poppins", sans-serif;
 }
 
 .cardScroll{

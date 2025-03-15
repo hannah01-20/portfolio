@@ -15,7 +15,7 @@ function Navbar(){
         setOpen(e=>!e);
     }
     return(
-        <nav className={`fixed top-0 z-[999] w-full backdrop-blur-lg shadow-sm transition ease-in duration-300 ${isOpen && "h-full" }`} >
+        <nav className={`fixed top-0 z-[999] w-full backdrop-blur-lg shadow-sm transition ease-in duration-1000 ${isOpen && "h-full" }`} >
             {useIsMobile() ? (
                 <>
                     <div className="w-full flex items-center justify-between px-5">
