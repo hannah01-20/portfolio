@@ -5,10 +5,19 @@
     --color-main: rgb(255,255,100);
     --spacing-card: 30rem;
     --font-Poppins: "Poppins", sans-serif;
+    @keyframes loop-scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+    --animate-loop-scroll: loop-scroll 10s linear infinite;
 }
 
 .cardScroll{
     overflow-x: hidden;
-    scrollbar-width: thin;
+    scrollbar-width:thin;
     scrollbar-color: pink rgba(0,0,0,0);
 }

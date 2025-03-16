@@ -6,7 +6,7 @@ function Header(){
         <header className="h-dvh overflow-hidden" id="home">
             <div className="w-full h-full bg-gradient-to-b from-white/0 to-black/80 ">
                 <div className=" flex flex-col-reverse lg:flex-row lg:p-20 justify-center items-center h-full">
-                    <div className="h-1/2 w-full md:w-auto lg:h-full flex flex-col items-center md:items-start md:justify-center gap-10">
+                    <div className="h-1/2 w-full md:w-auto lg:h-full flex flex-col items-center md:items-start md:justify-center gap-5 sm:gap-10">
                         <div className="p-8 rounded-md bg-blue-200/15  text-white w-2/3 grid gap-2 backdrop-blur-lg border border-blue-200 hover:bg-blue-200/50 transition ease-in duration-200 hover:translate-x-2 active:translate-x-2 active:bg-blue-200/50">
                             <h1 className="text-xl md:text-3xl font-bold text-rose-200"><u>Hello! I'm Hannah</u>,</h1>
                             <h2 className="text-lg md:text-2xl">Web and Software Developer</h2>

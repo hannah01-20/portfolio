@@ -22,7 +22,7 @@ function Projects(){
                     
                     <Card 
                     projectTitle="Student Council Online Voting System"
-                    about="Online voting system dedicated for AMACC Fairview Sudent Council Election and help students to vote more efficiently and accessibily." 
+                    about="Online voting system dedicated for AMACC Fairview Student Council Election and help students to vote more efficiently and accessibily." 
                     features={[
                         "User Authentication",
                         "Ballot form",
