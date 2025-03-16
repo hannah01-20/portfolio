@@ -12,7 +12,7 @@ function Header(){
                             <h2 className="text-lg md:text-2xl">Web and Software Developer</h2>
                             <p className="text-sm md:text-md">Passionate driven and eager to showcase my skills and bring ideas to life.</p>
                         </div>
-                        <a href={resume} download="hannah_florano_resume" target="_blank"><button className="bg-pink-200/15 backdrop-blur-sm border border-pink-200 text-white py-4 px-8 rounded-md font-bold transition ease-in duration-200 hover:bg-pink-200/50 hover:translate-x-2 active:bg-pink-200/50 active:translate-x-2">Download Resume</button></a>
+                        <a href={resume} download="hannah_florano_resume" target="_blank"><button className="bg-pink-200/15 backdrop-blur-sm border border-pink-200 text-white py-4 px-8 rounded-md font-bold transition ease-in duration-200 hover:bg-pink-200/50 hover:translate-x-2 active:bg-pink-200/50 active:translate-x-2 cursor-pointer">Download Resume</button></a>
                     </div>
                     <div className="h-1/2 lg:h-full flex justify-center items-center">
                         <img src={hannah} alt="hannah's picture" className="w-50 md:w-80 rounded-2xl shadow shadow-white transition ease-in duration-200 hover:shadow-2xl hover:-translate-y-2 active:shadow-2xl active:-translate-y-2" />
