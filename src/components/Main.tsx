@@ -1,10 +1,10 @@
-import Contact from "./sections/Contact";
+import Contact from "./sections/Experience";
 import Projects from "./sections/Projects";
 import Skills from "./sections/Skills";
 
 function Main(){
     return(
-        <main className="min-h-dvh">
+        <main>
             <Projects />
             <Skills />
             <Contact />

@@ -1,9 +1,9 @@
 import { CgGirl } from "react-icons/cg";
 import { FaProjectDiagram } from "react-icons/fa";
 import { FaUserGear } from "react-icons/fa6";
-import { IoIosMail } from "react-icons/io";
 import { MdMenu } from "react-icons/md";
 import { IoIosClose } from "react-icons/io";
+import { IoBriefcase } from "react-icons/io5";
 import NavItem from "./NavItem";
 import { useIsMobile } from "../../utils/userScreen";
 import { useState } from "react";
@@ -29,7 +29,7 @@ function Navbar(){
                         <div className="w-full h-full p-36 grid items-center" onClick={handleDropDown}>
                             <NavItem link="#projects" Logo={FaProjectDiagram} text="Projects"/>
                             <NavItem link="#skills" Logo={FaUserGear} text="Skills"/>
-                            <NavItem link="#contact" Logo={IoIosMail} text="Contact"/>
+                            <NavItem link="#experience" Logo={IoBriefcase} text="Experience"/>
                         </div>
                     }
                     
@@ -39,7 +39,7 @@ function Navbar(){
                     <NavItem link="#home" Logo={CgGirl} text="Hannah"/>
                     <NavItem link="#projects" Logo={FaProjectDiagram} text="Projects"/>
                     <NavItem link="#skills" Logo={FaUserGear} text="Skills"/>
-                    <NavItem link="#contact" Logo={IoIosMail} text="Contact"/>
+                    <NavItem link="#experience" Logo={IoBriefcase} text="Experience"/>
                 </div>
             )}
         </nav>
