@@ -13,7 +13,7 @@
             transform: translateX(-100%);
         }
     }
-    --animate-loop-scroll: loop-scroll 50s linear infinite;
+    --animate-loop-scroll: loop-scroll 50s linear infinite
 }
 
 .cardScroll{
