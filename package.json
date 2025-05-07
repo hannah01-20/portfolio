@@ -1,5 +1,6 @@
 {
   "name": "port",
+  "homepage": "https://hannah01-20.github.io/portfolio/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,11 +8,13 @@
     "predeploy": "npm run build",
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "deploy": "gh-pages -d dist --cname hannahflorano.me",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.14",
+    "gh-pages": "^6.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
