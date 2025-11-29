@@ -46,7 +46,7 @@ export const projects = [
             "Ballot form",
             "Submit ballot",
             "Presentation of Candidate Profile",
-            "Vote counts accurately",
+            "Count the votes accurately",
             "Presentation of the final outcome of the election",
             "Post Student Council activities"
         ],
@@ -63,5 +63,24 @@ export const projects = [
             "Operations: Addition, Substraction, Multiplication, and Division"
         ],
         stack: "Python, PySide6 (GUI framework)"
+    },
+]
+
+export const skills = [
+    {
+        title: "UI/UX Design",
+        description: "Prioritizing user experience while achieving feature requirements and modern looking design."
+    },
+    {
+        title: "Frontend Development",
+        description: "Building client-side interface, validating data before sending requests, managing routes, and user state."
+    },
+    {
+        title: "Backend Development",
+        description: "Handling requests, Cors configuration, REST API, handling database interaction, validation, and send responses."
+    },
+    {
+        title: "Database Management",
+        description: "Managing Relational Database, making queries, add constrains to maintain database structure."
     },
 ]
