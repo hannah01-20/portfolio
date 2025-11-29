@@ -84,3 +84,7 @@ export const skills = [
         description: "Managing Relational Database, making queries, add constrains to maintain database structure."
     },
 ]
+
+export const experiences = [
+    
+]
