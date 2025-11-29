@@ -66,6 +66,7 @@ export const projects = [
     },
 ]
 
+// Skills
 export const skills = [
     {
         title: "UI/UX Design",
@@ -85,6 +86,19 @@ export const skills = [
     },
 ]
 
+// Experience
 export const experiences = [
-    
+    {
+        jobTitle: "Frontend Developer Intern",
+        startDate: "October 2024",
+        endDate: "November 2024",
+        companyName: "Ollopa Corporation",
+        responsibilities: [
+            "Part of AI Department and frontend team",
+            "Report tasks progression",
+            "Responsive Web app optimization",
+            "Debbuging",
+            "Participate and contribute in meetings"
+        ]
+    },
 ]
