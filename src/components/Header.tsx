@@ -1,5 +1,5 @@
 import hannah from "../assets/grad-pic.jpg"
-import resume from "../pdfs/hannah_florano_CV.pdf"
+import resume from "../pdfs/hannah_florano_resume.pdf"
 import { name, occupation, description } from "../data"
 import { stringTitle } from "../utils/formatter"
 function Header(){
