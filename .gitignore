@@ -1,2 +1,4 @@
-styles.scss
-styles.css.map
+.DS_Store
+Thumbs.db
+*.log
+node_modules/
