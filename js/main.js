@@ -1,65 +1,89 @@
 (function () {
   "use strict";
 
+  const header = document.querySelector(".site-header");
   const navToggle = document.querySelector(".nav__toggle");
   const navMenu = document.querySelector(".nav__menu");
   const navLinks = document.querySelectorAll(".nav__link");
   const sections = document.querySelectorAll("section[id]");
   const revealElements = document.querySelectorAll(".reveal");
+  const prefersReducedMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+  ).matches;
 
-  /* Mobile nav toggle */
+  function setMenuOpen(isOpen) {
+    if (!navToggle || !navMenu) return;
+    navMenu.classList.toggle("is-open", isOpen);
+    navToggle.setAttribute("aria-expanded", String(isOpen));
+    document.body.classList.toggle("nav-open", isOpen);
+  }
+
   if (navToggle && navMenu) {
     navToggle.addEventListener("click", function () {
-      const isOpen = navMenu.classList.toggle("is-open");
-      navToggle.setAttribute("aria-expanded", String(isOpen));
+      setMenuOpen(!navMenu.classList.contains("is-open"));
     });
 
-    navLinks.forEach(function (link) {
+    navMenu.querySelectorAll("a").forEach(function (link) {
       link.addEventListener("click", function () {
-        navMenu.classList.remove("is-open");
-        navToggle.setAttribute("aria-expanded", "false");
+        setMenuOpen(false);
       });
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") {
+        setMenuOpen(false);
+      }
     });
   }
 
-  /* Smooth scroll for anchor links */
   document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     anchor.addEventListener("click", function (event) {
       const targetId = this.getAttribute("href");
-      if (targetId === "#") return;
+      if (!targetId || targetId === "#") return;
 
       const target = document.querySelector(targetId);
       if (!target) return;
 
       event.preventDefault();
-      target.scrollIntoView({ behavior: "smooth" });
+      target.scrollIntoView({
+        behavior: prefersReducedMotion ? "auto" : "smooth",
+      });
+      history.replaceState(null, "", targetId);
     });
   });
 
-  /* Active nav highlight on scroll */
   function setActiveNavLink() {
-    const scrollPos = window.scrollY + 100;
-
+    const scrollPos = window.scrollY + 120;
     let currentSection = "";
+
     sections.forEach(function (section) {
       if (scrollPos >= section.offsetTop) {
         currentSection = section.getAttribute("id");
       }
     });
 
+    if (currentSection === "certificates" || currentSection === "home") {
+      currentSection = currentSection === "home" ? "" : "projects";
+    }
+
     navLinks.forEach(function (link) {
-      link.classList.remove("is-active");
-      if (link.getAttribute("href") === "#" + currentSection) {
-        link.classList.add("is-active");
-      }
+      const href = link.getAttribute("href");
+      const isActive = href === "#" + currentSection;
+      link.classList.toggle("is-active", isActive);
     });
   }
 
-  window.addEventListener("scroll", setActiveNavLink, { passive: true });
-  setActiveNavLink();
+  function onScroll() {
+    if (header) {
+      header.classList.toggle("is-scrolled", window.scrollY > 8);
+    }
+    setActiveNavLink();
+  }
 
-  /* Scroll reveal via IntersectionObserver */
-  if ("IntersectionObserver" in window) {
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+
+  if ("IntersectionObserver" in window && !prefersReducedMotion) {
     const observer = new IntersectionObserver(
       function (entries) {
         entries.forEach(function (entry) {
