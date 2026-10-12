@@ -155,21 +155,23 @@
                 problem before reaching for the solution.
               </p>
               <p>
-                Recent work includes
+                Recent work includes booking version control, calendar sync,
+                and payout logic for
                 <a
                   href="https://koobo.ph"
                   target="_blank"
                   rel="noopener noreferrer"
                   >Koobo</a
                 >, a live booking platform for Siargao stays and activities,
-                and JeiChat, an internal employee messaging PWA with
-                GitHub-integrated ticketing. I’m looking for full-stack roles
-                where I can own features from interface through to API.
+                backed by Jest and Playwright tests, and real-time messaging
+                for JeiChat, an internal employee PWA. I’m looking for
+                full-stack roles where I can own features from interface
+                through to API.
               </p>
             </div>
             <dl class="about__facts">
               <div class="about__fact">
-                <dt>Currently</dt>
+                <dt>Previously</dt>
                 <dd>Zkript Solutions OPC</dd>
               </div>
               <div class="about__fact">
@@ -215,18 +217,26 @@
                 <li>NestJS</li>
                 <li>Express.js</li>
                 <li>Django</li>
-                <li>Flask</li>
                 <li>Python</li>
                 <li>REST APIs</li>
+                <li>WebSockets (Socket.IO)</li>
+                <li>Authentication &amp; Authorization</li>
                 <li>Progressive Web Apps</li>
+                <li>Push Notifications</li>
               </ul>
             </article>
             <article class="skills__group">
-              <h3 class="skills__label">Data &amp; tools</h3>
+              <h3 class="skills__label">Data, testing &amp; tools</h3>
               <ul class="skills__list">
                 <li>MongoDB</li>
+                <li>Mongoose</li>
                 <li>MySQL</li>
                 <li>SQL</li>
+                <li>Jest</li>
+                <li>Playwright</li>
+                <li>Mapbox</li>
+                <li>iCal</li>
+                <li>Expo (EAS)</li>
                 <li>Git &amp; GitHub</li>
                 <li>Bruno</li>
                 <li>Postman</li>
@@ -248,7 +258,7 @@
             <div class="timeline__body">
               <div class="timeline__header">
                 <div>
-                  <h3 class="timeline__role">Full Stack Web Developer</h3>
+                  <h3 class="timeline__role">Full-Stack Web Developer</h3>
                   <p class="timeline__company">Zkript Solutions OPC</p>
                 </div>
                 <time class="timeline__date" datetime="2025-09"
@@ -257,29 +267,39 @@
               </div>
               <ul class="timeline__list">
                 <li>
-                  Delivered full-stack web and mobile features across 5
-                  internal projects using TypeScript, Next.js, React Native,
-                  NestJS, Express.js, and MongoDB.
+                  Built full-stack web and mobile apps across 5 client and
+                  internal projects in an Agile/Scrum team, using TypeScript,
+                  Next.js, React Native, NestJS, Express.js, and MongoDB.
                 </li>
                 <li>
-                  Built
                   <a
                     href="https://koobo.ph"
                     target="_blank"
                     rel="noopener noreferrer"
                     >Koobo</a
-                  >, a production booking platform for Siargao stays,
-                  activities, and rentals — including booking flows, host
-                  listings, and card/GCash payment integration.
+                  >
+                  (105 listings): implemented listing snapshots so past
+                  bookings keep the listing details from the time of booking,
+                  and built iCal calendar sync so hosts listing on other
+                  platforms automatically block unavailable dates, preventing
+                  double bookings.
                 </li>
                 <li>
-                  Built JeiChat, an internal Progressive Web App with
-                  real-time messaging and a ticketing system integrated with
-                  the company’s GitHub organization repositories.
+                  Developed Koobo’s host, affiliate, and platform payout splits
+                  with Mongoose, verified against MongoDB aggregation
+                  pipelines, and wrote unit tests (Jest) and end-to-end tests
+                  (Playwright) for the reservation and payment flows.
                 </li>
                 <li>
-                  Contributed to a pre-launch React Native app that helps EV
-                  drivers discover and navigate to charging stations.
+                  JeiChat: implemented real-time messaging with Socket.IO,
+                  including typing indicators, automatic reconnection after
+                  network drops, and push notifications.
+                </li>
+                <li>
+                  EV Charging App: built React Native screens from Figma
+                  designs with Mapbox station maps, location-based search, and
+                  navigation, consistent on iOS and Android, and produced Expo
+                  development builds for internal testing.
                 </li>
                 <li>
                   Designed and tested REST APIs with Bruno, and collaborated
@@ -306,14 +326,20 @@
               </div>
               <p class="project__desc">
                 Production booking platform for Siargao stays, activities, and
-                rentals. Implemented booking flows, host listings, and payment
-                integration for cards and GCash.
+                rentals with 105 listings. Built listing version control,
+                iCal calendar sync to prevent double bookings, and host,
+                affiliate, and platform payout splits, with Jest and
+                Playwright tests covering reservation and payment flows.
               </p>
               <ul class="project__tech">
                 <li>TypeScript</li>
                 <li>Next.js</li>
                 <li>Express.js</li>
                 <li>MongoDB</li>
+                <li>Mongoose</li>
+                <li>iCal</li>
+                <li>Jest</li>
+                <li>Playwright</li>
               </ul>
               <a
                 href="https://koobo.ph"
@@ -330,14 +356,14 @@
               <h3 class="project__title">JeiChat</h3>
               <p class="project__meta">Internal PWA · 2025–2026</p>
               <p class="project__desc">
-                Employee messaging app with real-time chat and a ticketing
-                system tied to GitHub organization repositories.
+                Employee messaging app with real-time chat, typing
+                indicators, automatic reconnection, and push notifications.
               </p>
               <ul class="project__tech">
                 <li>TypeScript</li>
+                <li>Socket.IO</li>
                 <li>PWA</li>
-                <li>REST APIs</li>
-                <li>GitHub</li>
+                <li>Push Notifications</li>
               </ul>
             </article>
 
@@ -346,13 +372,15 @@
               <p class="project__meta">AMACC Fairview · 2024 · 130+ users</p>
               <p class="project__desc">
                 Online election platform for student council elections, with
-                secure voting deployed on Azure.
+                authentication and vote tallying. Received a Certificate of
+                Appreciation from the Student Council.
               </p>
               <ul class="project__tech">
                 <li>React</li>
+                <li>Tailwind CSS</li>
                 <li>Django</li>
-                <li>MySQL</li>
-                <li>Azure</li>
+                <li>Azure Database for MySQL</li>
+                <li>Azure App Service</li>
               </ul>
             </article>
           </div>
